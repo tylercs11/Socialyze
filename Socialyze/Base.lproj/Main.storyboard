@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Socialyze" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VUQ-Er-aAy">
+                                <rect key="frame" x="153" y="20" width="394" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awp-wk-uZ7">
+                                <rect key="frame" x="0.0" y="232" width="207" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="7Bz-2h-BLT"/>
+                                    <constraint firstAttribute="height" constant="168" id="7Hi-Rk-lYZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="House party" backgroundImage="houseparty.jpeg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchToCategoryFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RVS-hr-0X4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkM-d9-dcW">
+                                <rect key="frame" x="207" y="568" width="207" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="B5o-2Z-cXW"/>
+                                    <constraint firstAttribute="height" constant="168" id="OM0-Rt-3bL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Study group " backgroundImage="studying.jpeg"/>
+                                <connections>
+                                    <action selector="switchToCategoryFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ns-tN-8b2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTi-if-yTW">
+                                <rect key="frame" x="207" y="64" width="207" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="XI5-se-waM"/>
+                                    <constraint firstAttribute="width" constant="207" id="wAJ-e8-YZD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Dining" backgroundImage="dining.jpeg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchToCategoryFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Poh-ZL-58k"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Q0f-AR-bXM">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.81739885040310534" green="0.063726176141114574" blue="0.17126131842713457" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.81739885040000004" green="0.063726176139999993" blue="0.1712613184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Events" id="JQy-NJ-qcu" colorLabel="IBBuiltInLabel-Blue">
+                                        <barButtonItem key="leftBarButtonItem" tag="1" title="Profile" id="3Z8-6N-qLs">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Zq4-Pi-8tu">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="z5j-pj-mbi" kind="show" id="RNk-wr-dsX"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdW-Iu-ZwV">
+                                <rect key="frame" x="207" y="232" width="207" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="AjF-l8-ldl"/>
+                                    <constraint firstAttribute="height" constant="168" id="oGc-HR-oCw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Nightlife" backgroundImage="bars&amp;clubs.jpeg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchToCategoryFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tl6-PH-1Cr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gol-33-027">
+                                <rect key="frame" x="0.0" y="64" width="207" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="UHe-cU-uHu"/>
+                                    <constraint firstAttribute="height" constant="168" id="bgF-p7-xv1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Coffee" backgroundImage="coffee.jpeg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchToCategoryFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FvN-tf-slC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4U-RN-BJw">
+                                <rect key="frame" x="0.0" y="401" width="207" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="DOQ-Uy-yum"/>
+                                    <constraint firstAttribute="height" constant="168" id="MKM-vh-5K5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Fitness" backgroundImage="sports.jpg"/>
+                                <connections>
+                                    <action selector="switchToCategoryFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4L5-Qw-PRb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lg-AR-Ez9">
+                                <rect key="frame" x="0.0" y="568" width="207" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="fGE-En-CME"/>
+                                    <constraint firstAttribute="height" constant="168" id="vU5-z0-4Ld"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Causes" backgroundImage="causes.jpeg"/>
+                                <connections>
+                                    <action selector="switchToCategoryFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rRx-6f-sHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isg-NA-543">
+                                <rect key="frame" x="207" y="401" width="207" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="Czu-wT-GiJ"/>
+                                    <constraint firstAttribute="width" constant="207" id="b6u-OH-7qu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Gaming" backgroundImage="gaming.jpg"/>
+                                <connections>
+                                    <action selector="switchToCategoryFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HkH-aI-EpN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="R4U-RN-BJw" secondAttribute="trailing" constant="187" id="16n-eX-G2l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kTi-if-yTW" secondAttribute="trailing" constant="-20" id="3gg-uC-07x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gol-33-027" secondAttribute="trailing" constant="187" id="7uS-R6-XfU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="isg-NA-543" secondAttribute="trailing" constant="-20" id="B5f-8C-hMP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q0f-AR-bXM" secondAttribute="trailing" constant="-20" id="BAx-av-Ghe"/>
+                            <constraint firstItem="kTi-if-yTW" firstAttribute="top" secondItem="Q0f-AR-bXM" secondAttribute="bottom" id="G31-Tu-8kj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rkM-d9-dcW" secondAttribute="trailing" constant="-20" id="GeY-Ft-HxC"/>
+                            <constraint firstItem="5lg-AR-Ez9" firstAttribute="top" secondItem="R4U-RN-BJw" secondAttribute="bottom" constant="-1" id="HmQ-0D-hcm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="awp-wk-uZ7" secondAttribute="trailing" constant="187" id="IuO-tN-6IU"/>
+                            <constraint firstItem="isg-NA-543" firstAttribute="top" secondItem="jdW-Iu-ZwV" secondAttribute="bottom" constant="1" id="Mbu-5v-3jY"/>
+                            <constraint firstItem="jdW-Iu-ZwV" firstAttribute="top" secondItem="kTi-if-yTW" secondAttribute="bottom" id="QoE-fx-Odg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5lg-AR-Ez9" secondAttribute="trailing" constant="187" id="WVs-tp-qtm"/>
+                            <constraint firstItem="rkM-d9-dcW" firstAttribute="top" secondItem="isg-NA-543" secondAttribute="bottom" constant="-1" id="ZbG-bt-iJd"/>
+                            <constraint firstItem="Q0f-AR-bXM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dOo-1L-r6M"/>
+                            <constraint firstItem="awp-wk-uZ7" firstAttribute="top" secondItem="Gol-33-027" secondAttribute="bottom" id="gMD-qa-d4c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jdW-Iu-ZwV" secondAttribute="trailing" constant="-20" id="h72-Bf-nYc"/>
+                            <constraint firstItem="R4U-RN-BJw" firstAttribute="top" secondItem="awp-wk-uZ7" secondAttribute="bottom" constant="1" id="hbO-vV-rvR"/>
+                            <constraint firstItem="Q0f-AR-bXM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ju8-Ah-f2c"/>
+                            <constraint firstItem="Gol-33-027" firstAttribute="top" secondItem="Q0f-AR-bXM" secondAttribute="bottom" id="zYj-ed-Vh5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="WNb-4w-liy" kind="show" identifier="categoryDetail" id="HL2-Z0-pI5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671.01449275362324" y="-366.03260869565219"/>
+        </scene>
+        <!--Category-->
+        <scene sceneID="OpM-3S-TCu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Category" id="WNb-4w-liy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uej-NK-vmM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="-214"/>
+        </scene>
+        <!--PostEvent-->
+        <scene sceneID="EoG-Im-f44">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PostEvent" id="z5j-pj-mbi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hI8-ZJ-wAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="-506"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bars&amp;clubs.jpeg" width="8000" height="4912"/>
+        <image name="causes.jpeg" width="6016" height="4016"/>
+        <image name="coffee.jpeg" width="5605" height="1868"/>
+        <image name="dining.jpeg" width="5184" height="3456"/>
+        <image name="gaming.jpg" width="4166" height="4166"/>
+        <image name="houseparty.jpeg" width="3264" height="2448"/>
+        <image name="sports.jpg" width="8333" height="8333"/>
+        <image name="studying.jpeg" width="5616" height="3744"/>
+    </resources>
+    <color key="tintColor" red="1" green="0.07330367401" blue="0.21381447949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
