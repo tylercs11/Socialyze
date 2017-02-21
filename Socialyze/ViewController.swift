@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func coffeeButton(_ sender: Any) {
-    }
     
     @IBAction func switchToCategoryFromButton(_ sender: Any) {
         let categoryDefaults = UserDefaults.standard
